@@ -1,4 +1,4 @@
-**Project name: voltage-modular-examples**
+### Project name: voltage-modular-examples
 
 **Description**: This repository contains sample Voltage Modular module designs and code to help you learn how to use the Cherry Audio Voltage Module Designer.
 
