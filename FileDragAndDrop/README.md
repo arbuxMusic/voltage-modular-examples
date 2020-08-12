@@ -1,4 +1,4 @@
-# File Drag and Drop
+# File, Drag and Drop
 
 This module shows you how to setup and receive file drag and drop events.
 The module also shows how to use the Open and Save file dialogs in a module.
