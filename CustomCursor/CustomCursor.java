@@ -76,7 +76,7 @@ public class MyModule extends VoltageModule
 
 
       canBeBypassed = false;
-      SetSkin( "9febc5b5f0bd4ecab39816b1000570d5" );
+      SetSkin( "49d41ec79f1b4bac8fcb03ffdcf73b05" );
    }
 
    //-------------------------------------------------------------------------------
@@ -174,7 +174,7 @@ public class MyModule extends VoltageModule
                // The cursor's hotspot is the center point for the cursor.
                // In this example, if you load the image, you can see that the center point
                // is at (15px, 15px) x/y.
-               // If your cursor is a custom arrow pointing towards the upper right, your hotspot would be 0, 0
+               // If your cursor is a custom arrow pointing towards the upper left of the image, your hotspot would be 0, 0
                int hotSpotX = 15, hotSpotY = 15;
             
                // Setting a custom cursor is a two step operation:
