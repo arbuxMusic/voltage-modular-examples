@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CoreLib:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CoreLib_jar</output-path>
+    <root id="archive" name="CoreLib.jar">
+      <element id="module-output" name="CoreLib" />
+    </root>
+  </artifact>
+</component>
