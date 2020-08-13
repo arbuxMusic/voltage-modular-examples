@@ -2,7 +2,7 @@
 
 **Description**: This repository contains sample Voltage Modular module designs and code to help you learn how to use the Cherry Audio Voltage Module Designer.
 
-**Check the Project Wiki for more information**
+**Check the [Project Wiki](https://github.com/arbuxMusic/voltage-modular-examples/wiki) for more information**
 
 **Installation**: Clone the repository to your local machine. You will need Cherry Audio's [Voltage Module Designer](https://cherryaudio.com/voltage-module-designer) installed to view the files.
 
