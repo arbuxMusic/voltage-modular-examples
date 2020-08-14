@@ -30,6 +30,27 @@ public class MyModule extends VoltageModule
       super( moduleID, voltageObjects, "My Module", ModuleType.ModuleType_Utility, 12.8 );
 
 
+      textLabel5 = new VoltageLabel( "textLabel5", "textLabel5", this, "Component Event Explorer" );
+      AddComponent( textLabel5 );
+      textLabel5.SetWantsMouseNotifications( false );
+      textLabel5.SetPosition( 0, 0 );
+      textLabel5.SetSize( 375, 30 );
+      textLabel5.SetEditable( false, false );
+      textLabel5.SetJustificationFlags( VoltageLabel.Justification.HorizCentered );
+      textLabel5.SetJustificationFlags( VoltageLabel.Justification.VertCentered );
+      textLabel5.SetColor( new Color( 0, 0, 0, 255 ) );
+      textLabel5.SetBkColor( new Color( 255, 255, 255, 255 ) );
+      textLabel5.SetBorderColor( new Color( 0, 0, 0, 0 ) );
+      textLabel5.SetBorderSize( 1 );
+      textLabel5.SetMultiLineEdit( false );
+      textLabel5.SetIsNumberEditor( false );
+      textLabel5.SetNumberEditorRange( 0, 100 );
+      textLabel5.SetNumberEditorInterval( 1 );
+      textLabel5.SetNumberEditorUsesMouseWheel( false );
+      textLabel5.SetHasCustomTextHoverColor( false );
+      textLabel5.SetTextHoverColor( new Color( 0, 0, 0, 255 ) );
+      textLabel5.SetFont( "<Sans-Serif>", 14, false, false );
+
       DONTLOG_logFrame = new VoltageLabel( "DONTLOG_logFrame", "DONTLOG_logFrame", this, "Event Log" );
       AddComponent( DONTLOG_logFrame );
       DONTLOG_logFrame.SetWantsMouseNotifications( false );
@@ -38,8 +59,8 @@ public class MyModule extends VoltageModule
       DONTLOG_logFrame.SetEditable( false, false );
       DONTLOG_logFrame.SetJustificationFlags( VoltageLabel.Justification.Left );
       DONTLOG_logFrame.SetJustificationFlags( VoltageLabel.Justification.Top );
-      DONTLOG_logFrame.SetColor( new Color( 255, 255, 255, 255 ) );
-      DONTLOG_logFrame.SetBkColor( new Color( 65, 65, 65, 0 ) );
+      DONTLOG_logFrame.SetColor( new Color( 0, 0, 0, 255 ) );
+      DONTLOG_logFrame.SetBkColor( new Color( 176, 176, 176, 255 ) );
       DONTLOG_logFrame.SetBorderColor( new Color( 57, 24, 149, 255 ) );
       DONTLOG_logFrame.SetBorderSize( 1 );
       DONTLOG_logFrame.SetMultiLineEdit( false );
@@ -85,29 +106,19 @@ public class MyModule extends VoltageModule
       analogMeter1 = new VoltageAnalogVUMeter( "analogMeter1", "analogMeter1", this );
       AddComponent( analogMeter1 );
       analogMeter1.SetWantsMouseNotifications( false );
-      analogMeter1.SetPosition( 9, 9 );
+      analogMeter1.SetPosition( 10, 47 );
       analogMeter1.SetSize( 103, 57 );
       analogMeter1.SetSkin( "Analog Black" );
 
       button2 = new VoltageButton( "button2", "button2", this );
       AddComponent( button2 );
       button2.SetWantsMouseNotifications( false );
-      button2.SetPosition( 10, 81 );
+      button2.SetPosition( 99, 134 );
       button2.SetSize( 39, 39 );
       button2.SetSkin( "Large Rounded Square" );
       button2.ShowOverlay( false );
       button2.SetOverlayText( "" );
       button2.SetAutoRepeat( false );
-
-      button3 = new VoltageButton( "button3", "button3", this );
-      AddComponent( button3 );
-      button3.SetWantsMouseNotifications( false );
-      button3.SetPosition( 59, 82 );
-      button3.SetSize( 39, 39 );
-      button3.SetSkin( "Large Rounded Square" );
-      button3.ShowOverlay( false );
-      button3.SetOverlayText( "" );
-      button3.SetAutoRepeat( false );
 
       canvas1 = new VoltageCanvas( "canvas1", "canvas1", this, 141, 82 );
       AddComponent( canvas1 );
@@ -118,7 +129,7 @@ public class MyModule extends VoltageModule
       counter1 = new VoltageDigitalCounter( "counter1", "counter1", this, 2 );
       AddComponent( counter1 );
       counter1.SetWantsMouseNotifications( false );
-      counter1.SetPosition( 11, 126 );
+      counter1.SetPosition( 11, 140 );
       counter1.SetSize( 42, 33 );
       counter1.SetSkin( "Gray" );
       counter1.SetJustificationFlags( VoltageDigitalCounter.Justification.Centered );
@@ -126,7 +137,7 @@ public class MyModule extends VoltageModule
       counterUpButton = new VoltageButton( "counterUpButton", "counterUpButton", this );
       AddComponent( counterUpButton );
       counterUpButton.SetWantsMouseNotifications( false );
-      counterUpButton.SetPosition( 55, 127 );
+      counterUpButton.SetPosition( 55, 141 );
       counterUpButton.SetSize( 14, 14 );
       counterUpButton.SetSkin( "Large Rounded Square" );
       counterUpButton.ShowOverlay( true );
@@ -140,7 +151,7 @@ public class MyModule extends VoltageModule
       counterDownButton = new VoltageButton( "counterDownButton", "counterDownButton", this );
       AddComponent( counterDownButton );
       counterDownButton.SetWantsMouseNotifications( false );
-      counterDownButton.SetPosition( 55, 143 );
+      counterDownButton.SetPosition( 55, 157 );
       counterDownButton.SetSize( 14, 14 );
       counterDownButton.SetSkin( "Large Rounded Square" );
       counterDownButton.ShowOverlay( true );
@@ -154,8 +165,8 @@ public class MyModule extends VoltageModule
       editableText1 = new VoltageLabel( "editableText1", "editableText1", this, "Editable Text" );
       AddComponent( editableText1 );
       editableText1.SetWantsMouseNotifications( false );
-      editableText1.SetPosition( 13, 166 );
-      editableText1.SetSize( 80, 30 );
+      editableText1.SetPosition( 13, 180 );
+      editableText1.SetSize( 80, 18 );
       editableText1.SetEditable( false, true );
       editableText1.SetJustificationFlags( VoltageLabel.Justification.HorizCentered );
       editableText1.SetJustificationFlags( VoltageLabel.Justification.VertCentered );
@@ -189,7 +200,7 @@ public class MyModule extends VoltageModule
       image1 = new VoltageImage( "image1", "image1", this, false );
       AddComponent( image1 );
       image1.SetWantsMouseNotifications( false );
-      image1.SetPosition( 241, 140 );
+      image1.SetPosition( 241, 154 );
       image1.SetSize( 128, 64 );
       image1.SetCurrentImage( "image image.png" );
 
@@ -207,21 +218,21 @@ public class MyModule extends VoltageModule
       LED1 = new VoltageLED( "LED1", "LED1", this );
       AddComponent( LED1 );
       LED1.SetWantsMouseNotifications( false );
-      LED1.SetPosition( 171, 171 );
+      LED1.SetPosition( 171, 185 );
       LED1.SetSize( 17, 17 );
       LED1.SetSkin( "Red" );
 
       LED2 = new VoltageLED( "LED2", "LED2", this );
       AddComponent( LED2 );
       LED2.SetWantsMouseNotifications( false );
-      LED2.SetPosition( 171, 190 );
+      LED2.SetPosition( 171, 204 );
       LED2.SetSize( 17, 17 );
       LED2.SetSkin( "Red" );
 
       toggleLEDButton = new VoltageButton( "toggleLEDButton", "toggleLEDButton", this );
       AddComponent( toggleLEDButton );
       toggleLEDButton.SetWantsMouseNotifications( false );
-      toggleLEDButton.SetPosition( 194, 172 );
+      toggleLEDButton.SetPosition( 194, 186 );
       toggleLEDButton.SetSize( 39, 39 );
       toggleLEDButton.SetSkin( "Large Rounded Square" );
       toggleLEDButton.ShowOverlay( false );
@@ -231,7 +242,7 @@ public class MyModule extends VoltageModule
       midiInputJack1 = new VoltageMidiJack( "midiInputJack1", "midiInputJack1", this, JackType.JackType_MidiInput );
       AddComponent( midiInputJack1 );
       midiInputJack1.SetWantsMouseNotifications( false );
-      midiInputJack1.SetPosition( 264, 214 );
+      midiInputJack1.SetPosition( 264, 220 );
       midiInputJack1.SetSize( 57, 57 );
       midiInputJack1.SetSkin( "MIDI Jack" );
 
@@ -273,7 +284,7 @@ public class MyModule extends VoltageModule
       scrollbar2 = new VoltageScrollbar( "scrollbar2", "scrollbar2", this, true, false );
       AddComponent( scrollbar2 );
       scrollbar2.SetWantsMouseNotifications( false );
-      scrollbar2.SetPosition( 247, 9 );
+      scrollbar2.SetPosition( 274, 42 );
       scrollbar2.SetSize( 12, 100 );
       scrollbar2.SetRange( 0, 100 );
       scrollbar2.SetThumbSize( 20 );
@@ -285,22 +296,22 @@ public class MyModule extends VoltageModule
       slider1 = new VoltageSlider( "slider1", "slider1", this, true, 0.0, 1.0, 0.5, 0 );
       AddComponent( slider1 );
       slider1.SetWantsMouseNotifications( false );
-      slider1.SetPosition( 213, 7 );
-      slider1.SetSize( 17, 144 );
+      slider1.SetPosition( 245, 42 );
+      slider1.SetSize( 12, 103 );
       slider1.SetSkin( "Straight Black Plain" );
       slider1.DisplayValueInPercent( false );
 
       switch1 = new VoltageSwitch( "switch1", "switch1", this, 0 );
       AddComponent( switch1 );
       switch1.SetWantsMouseNotifications( false );
-      switch1.SetPosition( 120, 123 );
+      switch1.SetPosition( 158, 141 );
       switch1.SetSize( 35, 35 );
       switch1.SetSkin( "3-State Silver" );
 
       textLabel2 = new VoltageLabel( "textLabel2", "textLabel2", this, "Text" );
       AddComponent( textLabel2 );
       textLabel2.SetWantsMouseNotifications( false );
-      textLabel2.SetPosition( 102, 172 );
+      textLabel2.SetPosition( 97, 185 );
       textLabel2.SetSize( 52, 30 );
       textLabel2.SetEditable( false, false );
       textLabel2.SetJustificationFlags( VoltageLabel.Justification.HorizCentered );
@@ -321,7 +332,7 @@ public class MyModule extends VoltageModule
       toggleButton2 = new VoltageToggle( "toggleButton2", "toggleButton2", this, false, 1 );
       AddComponent( toggleButton2 );
       toggleButton2.SetWantsMouseNotifications( false );
-      toggleButton2.SetPosition( 176, 90 );
+      toggleButton2.SetPosition( 201, 109 );
       toggleButton2.SetSize( 31, 31 );
       toggleButton2.SetSkin( "Blue Square" );
       toggleButton2.ShowOverlay( false );
@@ -330,7 +341,7 @@ public class MyModule extends VoltageModule
       toggleButton3 = new VoltageToggle( "toggleButton3", "toggleButton3", this, false, 1 );
       AddComponent( toggleButton3 );
       toggleButton3.SetWantsMouseNotifications( false );
-      toggleButton3.SetPosition( 176, 126 );
+      toggleButton3.SetPosition( 201, 145 );
       toggleButton3.SetSize( 31, 31 );
       toggleButton3.SetSkin( "Blue Square" );
       toggleButton3.ShowOverlay( false );
@@ -339,7 +350,7 @@ public class MyModule extends VoltageModule
       toggleButton4 = new VoltageToggle( "toggleButton4", "toggleButton4", this, false, 0 );
       AddComponent( toggleButton4 );
       toggleButton4.SetWantsMouseNotifications( false );
-      toggleButton4.SetPosition( 124, 91 );
+      toggleButton4.SetPosition( 201, 40 );
       toggleButton4.SetSize( 31, 31 );
       toggleButton4.SetSkin( "Blue Square" );
       toggleButton4.ShowOverlay( false );
@@ -348,7 +359,7 @@ public class MyModule extends VoltageModule
       meter1 = new VoltageVUMeter( "meter1", "meter1", this );
       AddComponent( meter1 );
       meter1.SetWantsMouseNotifications( false );
-      meter1.SetPosition( 128, 12 );
+      meter1.SetPosition( 129, 50 );
       meter1.SetSize( 21, 59 );
       meter1.SetSkin( "Small Meter" );
       meter1.SetLinearMode( false );
@@ -356,7 +367,7 @@ public class MyModule extends VoltageModule
       vuMeterInput = new VoltageAudioJack( "vuMeterInput", "vuMeterInput", this, JackType.JackType_AudioInput );
       AddComponent( vuMeterInput );
       vuMeterInput.SetWantsMouseNotifications( false );
-      vuMeterInput.SetPosition( 161, 21 );
+      vuMeterInput.SetPosition( 159, 59 );
       vuMeterInput.SetSize( 37, 37 );
       vuMeterInput.SetSkin( "Jack Straight" );
 
@@ -472,7 +483,7 @@ public class MyModule extends VoltageModule
 
 
       canBeBypassed = false;
-      SetSkin( "8d1b1dcc6c3c43a6ba323d120e4ef347" );
+      SetSkin( "166f4f30fe3b4489b1d0d33621cc2a27" );
    }
 
    //-------------------------------------------------------------------------------
@@ -1003,13 +1014,13 @@ public class MyModule extends VoltageModule
    private VoltageButton counterUpButton;
    private VoltageDigitalCounter counter1;
    private VoltageCanvas canvas1;
-   private VoltageButton button3;
    private VoltageButton button2;
    private VoltageAnalogVUMeter analogMeter1;
    private VoltageToggle DONTLOG_logPauseButton;
    private VoltageScrollbar DONTLOG_logScrollbar;
    private VoltageCanvas DONTLOG_logCanvas;
    private VoltageLabel DONTLOG_logFrame;
+   private VoltageLabel textLabel5;
 
 
    //[user-code-and-variables]    Add your own variables and functions here
