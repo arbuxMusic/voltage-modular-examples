@@ -15,10 +15,13 @@ public class CircularArrayList<E> {
       */
     private ArrayList<E> arrayList;
 
+    /**
+     * The default value for reset/new items
+     */
     private E defaultValue;
 
     /**
-     * the current index
+     * the index of the most recent value added to the array
      */
     private AtomicInteger currentIndex = new AtomicInteger(0);
 
@@ -28,10 +31,24 @@ public class CircularArrayList<E> {
     private final IntBinaryOperator addOrWrap = (x, y) -> (x + y >= arrayList.size() ? 0 : x + y);
 
     /**
+     * Returh the size of the array
+     * @return the size of the array
+     */
+    public int size() {
+        return arrayList.size();
+    }
+
+    /**
      * Constructor for a circular array list
      * @param size the size of the array
      */
-    public CircularArrayList(int size, E defaultValue) {
+    public CircularArrayList(int size, E defaultValue) throws IllegalArgumentException {
+        // The array must have at least 1 element
+        if (size <= 0) {
+            throw new IllegalArgumentException("size must be > 0");
+        }
+
+        // Setup the new array
         arrayList = new ArrayList<E>(size);
         this.defaultValue = defaultValue;
 
