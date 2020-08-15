@@ -873,7 +873,7 @@ public class ComponentEventExplorer extends VoltageModule
 
 
       canBeBypassed = false;
-      SetSkin( "a251612ebabd44cd82e36b10aced2971" );
+      SetSkin( "498e6a21548f40a18c11d057fa4f4200" );
    }
 
    //-------------------------------------------------------------------------------

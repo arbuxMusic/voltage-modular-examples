@@ -12,6 +12,17 @@ Some notes on usage:
 
 This module _should_ continue to be developed with new features as I continue to learn VMD. 
 
+## Getting the code for the module.
+
+This  module depends on CoreLib in the same voltage-modular-examples Github project.
+You'll need to:
+- Build CoreLib using IntelliJ Idea (or Eclipse (Maven build))
+- Remove the current External JAR link in the ComponentEventExplorer module
+- Add the newly built CoreLib
+... You should now be able to run the module in Voltage Module Designer
+
+While I am still investigating the best way to 
+
 ## Using the module
 
 The module is split into 4 sections:
