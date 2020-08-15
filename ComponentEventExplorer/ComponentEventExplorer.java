@@ -873,7 +873,7 @@ public class ComponentEventExplorer extends VoltageModule
 
 
       canBeBypassed = false;
-      SetSkin( "d9196ecc606942d18dc80bc2be9ce4aa" );
+      SetSkin( "a251612ebabd44cd82e36b10aced2971" );
    }
 
    //-------------------------------------------------------------------------------
@@ -1311,14 +1311,15 @@ public class ComponentEventExplorer extends VoltageModule
       
          if (DONTLOG_showMidiInMessages.GetValue() > 0) {
             // Copy the message to the output
-            for(var message : messages) {
-               midiOutputJack1.AddMessage(message);
-            }
+            for (var message : messages) {
+               LogToBuffer("Process Sample:Midi-In: " + shortMessageFormatter.toString(message));
+            }      
+         }
+         
+         for(var message : messages) {
+            midiOutputJack1.AddMessage(message);
          }
 
-         for (var message : messages) {
-            LogToBuffer("Process Sample:Midi-In: " + shortMessageFormatter.toString(message));
-         }      
       }
 
       // Send mono inputs to mono outputs
