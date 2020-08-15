@@ -1,4 +1,4 @@
-package com.mycompany.newmodule;
+package au.com.arbuxmusic.voltagemodule;
 
 
 import voltage.controllers.*;
@@ -21,14 +21,14 @@ import au.com.arbuxmusic.corelib.midi.*;
 //[/user-imports]
 
 
-public class MyModule extends VoltageModule
+public class ComponentEventExplorer extends VoltageModule
 //[user-inheritance]
 //[/user-inheritance]
 {
 
-   public MyModule( long moduleID, VoltageObjects voltageObjects )
+   public ComponentEventExplorer( long moduleID, VoltageObjects voltageObjects )
    {
-      super( moduleID, voltageObjects, "My Module", ModuleType.ModuleType_Utility, 14.4 );
+      super( moduleID, voltageObjects, "ComponentEventExplorer", ModuleType.ModuleType_Visualizers, 14.4 );
 
 
       textLabel5 = new VoltageLabel( "textLabel5", "textLabel5", this, "Component Event Explorer" );
@@ -291,7 +291,7 @@ public class MyModule extends VoltageModule
       slider1.SetSkin( "Straight Black Plain Horizontal" );
       slider1.DisplayValueInPercent( false );
 
-      textLabel25 = new VoltageLabel( "textLabel25", "textLabel25", this, "Include in Log:" );
+      textLabel25 = new VoltageLabel( "textLabel25", "textLabel25", this, "Capture:" );
       AddComponent( textLabel25 );
       textLabel25.SetWantsMouseNotifications( false );
       textLabel25.SetPosition( 963, 24 );
@@ -579,6 +579,27 @@ public class MyModule extends VoltageModule
       textLabel10.SetTextHoverColor( new Color( 0, 0, 0, 255 ) );
       textLabel10.SetFont( "<Sans-Serif>", 14, false, false );
 
+      textLabel21 = new VoltageLabel( "textLabel21", "textLabel21", this, "==>" );
+      AddComponent( textLabel21 );
+      textLabel21.SetWantsMouseNotifications( false );
+      textLabel21.SetPosition( 109, 305 );
+      textLabel21.SetSize( 26, 30 );
+      textLabel21.SetEditable( false, false );
+      textLabel21.SetJustificationFlags( VoltageLabel.Justification.Left );
+      textLabel21.SetJustificationFlags( VoltageLabel.Justification.VertCentered );
+      textLabel21.SetColor( new Color( 255, 255, 255, 255 ) );
+      textLabel21.SetBkColor( new Color( 65, 65, 65, 0 ) );
+      textLabel21.SetBorderColor( new Color( 0, 0, 0, 0 ) );
+      textLabel21.SetBorderSize( 1 );
+      textLabel21.SetMultiLineEdit( false );
+      textLabel21.SetIsNumberEditor( false );
+      textLabel21.SetNumberEditorRange( 0, 100 );
+      textLabel21.SetNumberEditorInterval( 1 );
+      textLabel21.SetNumberEditorUsesMouseWheel( false );
+      textLabel21.SetHasCustomTextHoverColor( false );
+      textLabel21.SetTextHoverColor( new Color( 0, 0, 0, 255 ) );
+      textLabel21.SetFont( "<Sans-Serif>", 14, false, false );
+
       textLabel11 = new VoltageLabel( "textLabel11", "textLabel11", this, "VUs:" );
       AddComponent( textLabel11 );
       textLabel11.SetWantsMouseNotifications( false );
@@ -849,31 +870,10 @@ public class MyModule extends VoltageModule
       DONTLOG_showMidiInMessages.SetOverlayArea( 0, 0, 0, 0 );
       DONTLOG_showMidiInMessages.SetOverlayTextJustification( VoltageButton.Justification.Centered );
 
-      textLabel21 = new VoltageLabel( "textLabel21", "textLabel21", this, "==>" );
-      AddComponent( textLabel21 );
-      textLabel21.SetWantsMouseNotifications( false );
-      textLabel21.SetPosition( 109, 305 );
-      textLabel21.SetSize( 26, 30 );
-      textLabel21.SetEditable( false, false );
-      textLabel21.SetJustificationFlags( VoltageLabel.Justification.Left );
-      textLabel21.SetJustificationFlags( VoltageLabel.Justification.VertCentered );
-      textLabel21.SetColor( new Color( 255, 255, 255, 255 ) );
-      textLabel21.SetBkColor( new Color( 65, 65, 65, 0 ) );
-      textLabel21.SetBorderColor( new Color( 0, 0, 0, 0 ) );
-      textLabel21.SetBorderSize( 1 );
-      textLabel21.SetMultiLineEdit( false );
-      textLabel21.SetIsNumberEditor( false );
-      textLabel21.SetNumberEditorRange( 0, 100 );
-      textLabel21.SetNumberEditorInterval( 1 );
-      textLabel21.SetNumberEditorUsesMouseWheel( false );
-      textLabel21.SetHasCustomTextHoverColor( false );
-      textLabel21.SetTextHoverColor( new Color( 0, 0, 0, 255 ) );
-      textLabel21.SetFont( "<Sans-Serif>", 14, false, false );
-
 
 
       canBeBypassed = false;
-      SetSkin( "6d745f29b97c4e0285804dbf69050ccb" );
+      SetSkin( "d9196ecc606942d18dc80bc2be9ce4aa" );
    }
 
    //-------------------------------------------------------------------------------
@@ -1500,7 +1500,6 @@ public class MyModule extends VoltageModule
 
 
    // Auto-generated variables
-   private VoltageLabel textLabel21;
    private VoltageToggle DONTLOG_showMidiInMessages;
    private VoltageToggle DONTLOG_showPolySamples_1;
    private VoltageToggle DONTLOG_showMonoSamples;
@@ -1515,6 +1514,7 @@ public class MyModule extends VoltageModule
    private VoltageLabel textLabel13;
    private VoltageLabel textLabel12;
    private VoltageLabel textLabel11;
+   private VoltageLabel textLabel21;
    private VoltageLabel textLabel10;
    private VoltageLabel textLabel9;
    private VoltageLabel textLabel8;
@@ -1572,7 +1572,7 @@ public class MyModule extends VoltageModule
    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss,SSSSS"); 
    
    // A fixed buffer to receive log entries for painting 
-   String[] logEntries = new String[27];
+   String[] logEntries = new String[28];
    
    // Midi formatter for decoding midi messages into text
    ShortMessageFormatter shortMessageFormatter = new ShortMessageFormatter();
@@ -1618,12 +1618,12 @@ public class MyModule extends VoltageModule
       
       
       g.setColor(Color.WHITE);
-      for (int i = 0; i < logEntries.length; i++) {
+      int y = canvasHeight - 1;
+      for (int i = logEntries.length - 1; i >= 0; i--) {
          String logEntry = logEntries[i];
          
-         // int stringWidth = fontMetrics.stringWidth(logEntry);
-         
-         g.drawString(logEntry, -horizontalOffset, (i + 1) * stringHeight);
+         g.drawString(logEntry, -horizontalOffset, y);
+         y -= stringHeight;
       }
       
       g.dispose();
