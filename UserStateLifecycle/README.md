@@ -168,3 +168,21 @@ TODO:
       g.dispose();
       
    }
+   
+   
+  --
+  
+  import java.io.ByteArrayOutputStream;
+
+import java.io.ByteArrayInputStream;
+  
+  --
+  
+  
+  
+	public double vuMeterValue;
+	public double animationValue;
+	public double exampleCanvasCursorPositionX = 50;
+	public transient BufferedImage canvasBitmap;
+	public double digitalCounterValue;
+	public int imageValue;
