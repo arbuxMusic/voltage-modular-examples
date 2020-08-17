@@ -116,7 +116,7 @@ public class BypassModule extends VoltageModule
 
 
       canBeBypassed = true;
-      SetSkin( "924bf152d42f47358c6548d10a9bafb9" );
+      SetSkin( "f39ff68d39ed477c85e3e0b08a19d799" );
    }
 
    //-------------------------------------------------------------------------------

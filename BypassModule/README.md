@@ -4,7 +4,7 @@ This module shows how to setup and implement a bypassed module.
 
 ## Configuring bypass in a Voltage Module
 
-To configure a module to be bypassable, the "Can be Bypassed" property should be checked in the module properties in VMD.
+To configure a module to be bypassable, the module's "Can be Bypassed" property should be checked in VMD.
 
 This will automatically add the "ProcessBypassedSample()" method to the Module code. This method must be implemented for bypass to work correctly.
 
