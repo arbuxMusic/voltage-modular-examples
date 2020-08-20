@@ -1,0 +1,124 @@
+---------------------------------------------------------
+20:39:26:36542100
+Log:TestValue:0
+
+** THREAD: 28
+java.base@13.0.2/jdk.internal.misc.Unsafe.park(Native Method)java.base@13.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:235)java.base@13.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+** THREAD: 24
+java.desktop@13.0.2/sun.awt.windows.WToolkit.eventLoop(Native Method)java.desktop@13.0.2/sun.awt.windows.WToolkit.run(WToolkit.java:312)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+** THREAD: 26
+java.base/java.lang.Thread.getStackTrace(Thread.java:1598)com.mycompany.newmodule.MyModule.LogFile(MyModule.java:460)com.mycompany.newmodule.MyModule.Initialize(MyModule.java:59)
+
+** THREAD: 2
+java.base@13.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)java.base@13.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:241)java.base@13.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+** THREAD: 3
+java.base@13.0.2/java.lang.Object.wait(Native Method)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)java.base@13.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+** THREAD: 27
+java.base@13.0.2/jdk.internal.misc.Unsafe.park(Native Method)java.base@13.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)java.base@13.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+** THREAD: 4
+
+
+** THREAD: 21
+java.base@13.0.2/java.lang.Object.wait(Native Method)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)java.base@13.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)java.base@13.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+** THREAD: 22
+java.base@13.0.2/java.lang.Object.wait(Native Method)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)java.desktop@13.0.2/sun.java2d.Disposer.run(Disposer.java:144)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+---------------------------------------------------------
+20:39:26:47545200
+Log:TestValue:1
+
+** THREAD: 28
+java.base@13.0.2/jdk.internal.misc.Unsafe.park(Native Method)java.base@13.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:235)java.base@13.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+** THREAD: 24
+java.desktop@13.0.2/sun.awt.windows.WToolkit.eventLoop(Native Method)java.desktop@13.0.2/sun.awt.windows.WToolkit.run(WToolkit.java:312)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+** THREAD: 26
+java.base/java.lang.Thread.getStackTrace(Thread.java:1598)com.mycompany.newmodule.MyModule.LogFile(MyModule.java:460)com.mycompany.newmodule.MyModule.Initialize(MyModule.java:63)
+
+** THREAD: 2
+java.base@13.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)java.base@13.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:241)java.base@13.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+** THREAD: 3
+java.base@13.0.2/java.lang.Object.wait(Native Method)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)java.base@13.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+** THREAD: 27
+java.base@13.0.2/jdk.internal.misc.Unsafe.park(Native Method)java.base@13.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)java.base@13.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+** THREAD: 4
+
+
+** THREAD: 21
+java.base@13.0.2/java.lang.Object.wait(Native Method)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)java.base@13.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)java.base@13.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+** THREAD: 22
+java.base@13.0.2/java.lang.Object.wait(Native Method)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)java.desktop@13.0.2/sun.java2d.Disposer.run(Disposer.java:144)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+---------------------------------------------------------
+20:39:28:848250500
+Log:TestValue:1
+
+** THREAD: 28
+java.base@13.0.2/jdk.internal.misc.Unsafe.park(Native Method)java.base@13.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:235)java.base@13.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+** THREAD: 24
+java.desktop@13.0.2/sun.awt.windows.WToolkit.eventLoop(Native Method)java.desktop@13.0.2/sun.awt.windows.WToolkit.run(WToolkit.java:312)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+** THREAD: 26
+java.base/java.lang.Thread.getStackTrace(Thread.java:1598)com.mycompany.newmodule.MyModule.LogFile(MyModule.java:460)com.mycompany.newmodule.MyModule.Initialize(MyModule.java:59)
+
+** THREAD: 2
+java.base@13.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)java.base@13.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:241)java.base@13.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+** THREAD: 3
+java.base@13.0.2/java.lang.Object.wait(Native Method)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)java.base@13.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+** THREAD: 27
+java.base@13.0.2/jdk.internal.misc.Unsafe.park(Native Method)java.base@13.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)java.base@13.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+** THREAD: 4
+
+
+** THREAD: 21
+java.base@13.0.2/java.lang.Object.wait(Native Method)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)java.base@13.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)java.base@13.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+** THREAD: 22
+java.base@13.0.2/java.lang.Object.wait(Native Method)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)java.desktop@13.0.2/sun.java2d.Disposer.run(Disposer.java:144)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+---------------------------------------------------------
+20:39:28:853251300
+Log:TestValue:2
+
+** THREAD: 28
+java.base@13.0.2/jdk.internal.misc.Unsafe.park(Native Method)java.base@13.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:235)java.base@13.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+** THREAD: 24
+java.desktop@13.0.2/sun.awt.windows.WToolkit.eventLoop(Native Method)java.desktop@13.0.2/sun.awt.windows.WToolkit.run(WToolkit.java:312)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+** THREAD: 26
+java.base/java.lang.Thread.getStackTrace(Thread.java:1598)com.mycompany.newmodule.MyModule.LogFile(MyModule.java:460)com.mycompany.newmodule.MyModule.Initialize(MyModule.java:63)
+
+** THREAD: 2
+java.base@13.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)java.base@13.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:241)java.base@13.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+** THREAD: 3
+java.base@13.0.2/java.lang.Object.wait(Native Method)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)java.base@13.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+** THREAD: 27
+java.base@13.0.2/jdk.internal.misc.Unsafe.park(Native Method)java.base@13.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)java.base@13.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
+** THREAD: 4
+
+
+** THREAD: 21
+java.base@13.0.2/java.lang.Object.wait(Native Method)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)java.base@13.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)java.base@13.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+** THREAD: 22
+java.base@13.0.2/java.lang.Object.wait(Native Method)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)java.base@13.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)java.desktop@13.0.2/sun.java2d.Disposer.run(Disposer.java:144)java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+
